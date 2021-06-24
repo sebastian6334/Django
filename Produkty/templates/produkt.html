@@ -5,8 +5,8 @@
       {% if produkt_user %}
       <div class="gora">
             <h3> {{ produkt_user.kategoria }} {{ produkt_user.nazwa }}</h3>
-            <p>Producent: {{ produkt_user.producent }}</p>
-            <p>Opis produktu:{{ produkt_user.opis }}</p>
+            <p><b>Producent: </b>{{ produkt_user.producent }}</p>
+            <p><b>Opis produktu:</b>{{ produkt_user.opis }}</p>
       </div>
 
 
@@ -14,42 +14,21 @@
 
             <p><img id="produkt_img" src="{{ produkt_user.zdjecie }}"></p>
             <div style="clear:both;">
-            <p>Cena produktu: {{ produkt_user.cena }}</p>
+                  <p><b>Cena produktu:</b> {{ produkt_user.cena }}</p>
             </div>
 
       </div>
 
-<!--      <div id="dol"><p class="specgraf"><h4>Specyfikacja</h4></p>-->
+      <div id="dol">
 
-<!--            <div class="linia">-->
-<!--                  <div class="linia1">-->
-<!--                        <div class="linia3">Taktowanie</div></div>-->
-<!--                  <div class="linia2">-->
-<!--                        <div class="linia3">{{ produkt_user.taktowanie }}</div></div>-->
-<!--            </div>-->
+            <div class="linia"><h4 class="specgraf">Specyfikacja</h4>
+                  <div class="linia1">
+                        <div class="linia3">Taktowanie</div></div>
+                  <div class="linia2">
+                        <div class="linia3">{{ produkt_user.taktowanie }}</div></div>
+            </div>
 
-<!--             <div class="linia">-->
-<!--                  <div class="linia1">-->
-<!--                        <div class="linia3">Taktowanie</div></div>-->
-<!--                  <div class="linia2">-->
-<!--                        <div class="linia3">{{ produkt_user.taktowanie }}</div></div>-->
-<!--            </div>-->
-
-<!--             <div class="linia">-->
-<!--                  <div class="linia1">-->
-<!--                        <div class="linia3">Taktowanie</div></div>-->
-<!--                  <div class="linia2">-->
-<!--                        <div class="linia3">{{ produkt_user.taktowanie }}</div></div>-->
-<!--            </div>-->
-
-<!--             <div class="linia">-->
-<!--                  <div class="linia1">-->
-<!--                        <div class="linia3">Taktowanie</div></div>-->
-<!--                  <div class="linia2">-->
-<!--                        <div class="linia3">{{ produkt_user.taktowanie }}</div></div>-->
-<!--            </div>-->
-
-<!--      </div>-->
+      </div>
 
       {% else %}
           <p>Nie ma produktu o takim id</p>
