@@ -1,0 +1,173 @@
+body{
+    font-family: Helvetica;
+    background-image: url(https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2020/11/sky.jpg);
+    background-size: cover;
+}
+
+
+
+#kontener1{
+    height: auto;
+    max-width:1200px;
+    margin: 0 auto ;
+    background-color: white;
+}
+header{
+    height:auto;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 3%;
+    background-color:white;
+    border-bottom: 1px solid black;
+
+}
+
+nav{
+width:1200px;
+margin-left:20px;
+margin-right:20px;
+clear:both;
+}
+
+section{
+    clear:both;
+    height:auto;
+    max-width:1200px;
+    margin: 0 auto;
+    background-color:white;
+
+}
+
+h1{
+    text-align:left;
+    color:black;
+}
+
+h2{
+    float:left;
+    color:white;
+    background-color: gray;
+}
+
+img#logo{
+   float:left;
+   height:15%;
+   width:auto%;
+   display:block;
+}
+img#produkt_img{
+    height:25%;
+}
+.gora{
+    clear:both;
+}
+.srodek{
+    clear:both;
+}
+
+.icon{
+    padding:1%
+}
+
+.find {
+
+    float:right;
+    display:block;
+    padding:1%
+}
+
+.logowanie{
+    text-decoration:none;
+    float:right;
+    background-color:white;
+    margin:10px;
+}
+
+.rejestracja{
+    text-decoration:none;
+    float: right;
+    background-color:white;
+    margin:10px;
+}
+
+#menu{
+    margin:10px;
+    float:left;
+    height:auto;
+    }
+
+
+a.menu{
+    text-align:center;
+    height:auto;
+    width:auto;
+    background-color: gray;
+    display:inline-block;
+    padding: 10px 20px;
+    color:white;
+    text-decoration:none;
+    float:left;
+    font-weight:bold;
+
+}
+a.list{
+    height:auto;
+    width:100%;
+    background-color:lightgray;
+    padding: 10px 30px;
+    color:black;
+    text-decoration:none;
+    float:left;
+    border-top:1px solid gray;
+    border-left:1px solid gray;
+    border-right:1px solid gray;
+
+}
+
+a.menu:hover, a.list:hover{
+
+    font-size:15px;
+    background-color: crimson;
+}
+a.menu.active{
+    background-color: crimson;
+    font-size: 15px;
+    font-weight: bold;}
+
+#wyswietl{
+    text-align:center;
+    height:auto;
+    width:auto;
+    color: black;
+    padding:10px 10px;
+}
+
+.linia{
+    width:80%;
+    height:auto;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.linia1{
+    float:left;
+    width:50%;
+    height:auto;
+    background-color:lightgray;
+    border-bottom:1px solid gray;
+    padding:0,5%;
+}
+.linia2{
+    float:left;
+    width:50%;
+    height:auto;
+    background-color:lightgray;
+    border-bottom:1px solid gray;
+    padding:0,5%;
+    border-left:1px solid gray;
+}
+
+.specgraf{
+    padding:30px;
+    border-bottom:1px solid gray;
+}

@@ -1,0 +1,56 @@
+{% load static %}
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Podzespołowo</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <div id="kontener1">
+
+
+            <header>
+                <img id="logo" src="{% static 'logo.png' %}" >
+
+                <a class="logowanie" href ="logowanie"/>Zaloguj się</a>
+
+                <a class="rejestracja" href="rejestracja"/>Zarejestruj się  </a>
+
+
+                <i class="icon">
+
+                   <form class="find" action="action_page.py">
+                        <input type="text" placeholder="Szukaj" name="Szukaj">
+                       <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                </i>
+                <nav>
+                     {% for kat in kategoria %}
+                    <p><a class="menu " href = "/kategoria/{{ kat.id }}">{{ kat.nazwa }} </a></p>
+
+                    {% endfor %}
+			    </nav>
+
+            </header>
+
+
+            <section>
+
+
+                <div id="wyswietl">
+                    {% block product %}  {% endblock product %}
+
+                </div>
+            </section>
+                <div style="clear:both"></div>
+    </div>
+
+
+</body>
+</html>
