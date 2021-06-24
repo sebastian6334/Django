@@ -18,10 +18,7 @@
                 <img id="logo" src="{% static 'logo.png' %}" >
 
                 <a class="logowanie" href ="logowanie"/>Zaloguj się</a>
-
                 <a class="rejestracja" href="rejestracja"/>Zarejestruj się  </a>
-
-
                 <i class="icon">
 
                    <form class="find" action="action_page.py">
@@ -31,7 +28,7 @@
 
                 </i>
                 <nav>
-                     {% for kat in kategoria %}
+                     {% for kat in kategorie %}
                     <p><a class="menu " href = "/kategoria/{{ kat.id }}">{{ kat.nazwa }} </a></p>
 
                     {% endfor %}
@@ -44,13 +41,13 @@
 
 
                 <div id="wyswietl">
-                    {% block product %}  {% endblock product %}
+                    {% block produkt %}  {% endblock produkt %}
 
                 </div>
             </section>
                 <div style="clear:both"></div>
     </div>
 
-
+<center><footer>Kontakt: Tel:999 333 444 E-mail: podzespolowo@gmail.com</footer></center>
 </body>
 </html>
