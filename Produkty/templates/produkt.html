@@ -5,8 +5,8 @@
       {% if produkt_user %}
       <div class="gora">
             <h3> {{ produkt_user.kategoria }} {{ produkt_user.nazwa }}</h3>
-            <p><b>Producent: </b>{{ produkt_user.producent }}</p>
-            <p><b>Opis produktu:</b>{{ produkt_user.opis }}</p>
+            <p><b>Producent: </b>{{ produkt_user.producent }}</p><br><br>
+            <p class="opis">{{ produkt_user.opis }}</p>
       </div>
 
 
@@ -23,10 +23,30 @@
 
             <div class="linia"><h4 class="specgraf">Specyfikacja</h4>
                   <div class="linia1">
-                        <div class="linia3">Taktowanie</div></div>
+                        <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow1 }}</div></div>
                   <div class="linia2">
-                        <div class="linia3">{{ produkt_user.taktowanie }}</div></div>
+                        <div class="linia3">{{ produkt_user.wartosc_parametrow1 }}</div></div>
+
+
+
+                  <div class="linia1">
+                        <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow2 }}</div></div>
+                  <div class="linia2">
+                        <div class="linia3">{{ produkt_user.nazwa }}</div></div>
+
+
+                  <div class="linia1">
+                        <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow3 }}</div></div>
+                  <div class="linia2">
+                        <div class="linia3">{{ produkt_user.nazwa }}</div></div>
+
+                  <div class="linia1">
+                        <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow4 }}</div></div>
+                  <div class="linia2">
+                        <div class="linia3">{{ produkt_user.nazwa }}</div></div>
             </div>
+
+
 
       </div>
 

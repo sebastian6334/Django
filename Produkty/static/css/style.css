@@ -15,14 +15,14 @@ body{
     background-color: white;
 }
 
-@media screen and (max-width: 1200px)
+/*@media screen and (max-width: 22200px)
     #kontener1{
         height:auto;
         width:300px;
         margin: 0 auto ;
         background-color: white;
     }
-
+*/
 
 header{
     height:auto;
@@ -34,11 +34,13 @@ header{
 
 }
 
-nav{
-    max-width:1200px;
+nav {
+    display:block;
+    text-align:center;
+    max-width:1100px;
     margin-left:20px;
     margin-right:20px;
-    clear:both;
+    background-color:red;
 }
 
 section{
@@ -110,20 +112,21 @@ img#produkt_img{
 
 }
 
-#menu{
+.menu{
+    display:block;
+    position:center;
     max-weight:1200px;
-    margin:10px;
     float:left;
-    height:auto;
-    }
+}
 
 
 a.menu{
+    position:center;
     text-align:center;
     height:auto;
     width:auto;
     background-color: gray;
-    display:inline-block;
+    display:block;
     padding: 15px 20px;
     color:white;
     text-decoration:none;
@@ -131,7 +134,7 @@ a.menu{
     font-weight:bold;
     font-size:14px;
 }
-@media screen and (max-width: 1210px){
+/* @media screen and (max-width: 12210px){
     #kontener1{
     background-color:white;
     }
@@ -141,7 +144,7 @@ a.menu{
     background-color:white;
     border-bottom:1px solid white;
     float:left;
-    }
+   }
 
 
     a.menu{
@@ -212,7 +215,7 @@ a.menu{
     max-width:300px;
 }
 }
-
+*/
 
 a.list{
     height:auto;
@@ -232,10 +235,6 @@ a.menu:hover, a.list:hover{
 
     background-color: crimson;
 }
-a.menu.active{
-    background-color: crimson;
-    font-size: 15px;
-    font-weight: bold;}
 
 #wyswietl{
     text-align:center;
@@ -272,10 +271,45 @@ a.menu.active{
 
 .specgraf{
     padding:30px;
-    border-bottom:1px solid gray;
 }
+
+a.glyphicon glyphicon-envelope{
+    text-decoration:none;
+    }
+
 footer{
     max-width:1200px;
     background-color:white;
     text-align:center;
+    }
+#spaceimg, spaceimg2{
+    clear:both;
+    position:relative;
+    margin:50px;
+}
+
+#space{
+    position:center;
+    height:150px;
+    margin:50px;
+}
+
+address{
+    margin:10px;
+    position:center;
+    text-align:center;
+}
+
+#insert{
+    text-align:center;
+    display:block;
+    position:relative;
+    background-color:lightgray;
+    width:300px;
+    height:400px;
+}
+
+.opis{
+    text-align:justify;
+
 }

@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Produkty, Kategoria, Zdj
+from .models import Produkty, Kategoria, Zdj, Wartosc
 
 
 # Create your views here.
@@ -35,3 +35,13 @@ def zdj(request, id):
     zdjecie_user = Zdj.objects.get(pk=id)
     dane = {'zdjecie_user': zdjecie_user, 'kategorie': kategorie}
     return render(request, 'produkt.html', dane)
+
+
+def wartosc(request, id):
+     kategorie = Kategoria.objects.all()
+     wartosc_user = Wartosc.objects.get(pk=id)
+     dane = {'wartosc_user': wartosc_user, 'kategoria': kategorie}
+     return render(request, 'produkt.html', dane)
+
+
+
