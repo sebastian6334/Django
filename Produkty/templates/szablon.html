@@ -17,11 +17,8 @@
             <header>
                 <img id="logo" src="{% static 'logo.png' %}" >
 
-                <a class="logowanie" href ="logowanie"/>Zaloguj się</a>
-
-                <a class="rejestracja" href="rejestracja"/>Zarejestruj się  </a>
-
-
+                <a class="logowanie" href ="#mainlog"/>Zaloguj się</a>
+                <a class="rejestracja" href="#mainlog"/>Zarejestruj się  </a>
                 <i class="icon">
 
                    <form class="find" action="action_page.py">
@@ -30,27 +27,83 @@
                     </form>
 
                 </i>
-                <nav>
-                     {% for kat in kategoria %}
-                    <p><a class="menu " href = "/kategoria/{{ kat.id }}">{{ kat.nazwa }} </a></p>
-
-                    {% endfor %}
-			    </nav>
 
             </header>
+
+        <section id="navigation">
+            <center><nav>
+                    {% for kat in kategorie %}
+                        <p><a class="menu " href = "/kategoria/{{ kat.id }}">{{ kat.nazwa }} </a></p>
+
+                    {% endfor %}
+            </nav></center>
+
+        </section>
 
 
             <section>
 
 
                 <div id="wyswietl">
-                    {% block product %}  {% endblock product %}
+                    {% block produkt %}  {% endblock produkt %}
 
                 </div>
             </section>
                 <div style="clear:both"></div>
+
+        <section class="space">
+                    <center> <img id="spaceimg" src="{% static 'space.png' %}" ></center>
+
+        </section>
+        <section>
+            <center><h3>Kontakt: </h3></center>
+            <center><div id="map">
+                    <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.07588502999081~19.65638970281821&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                    </iframe>
+                    <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+                    <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.07588502999081~19.65638970281821&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">Wyświetl większą mapę</a> &nbsp; | &nbsp;
+                    <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.07588502999081~19.65638970281821&amp;sty=r&amp;lvl=16&amp;rtp=~pos.52.07588502999081_19.65638970281821____&amp;FORM=MBEDLD">Pobierz wskazówki</a>
+                </div>
+            </div></center>
+        </section>
+         <address><br>
+            <p id="address">
+                <span class="glyphicon glyphicon-map-marker">
+                </span>
+                &nbsp;&nbsp; ul. Rynek 5, 99-423 Bielawy
+            </p>
+
+            <p id="phone" >
+                <span class="glyphicon glyphicon-earphone">
+                </span>
+                &nbsp;&nbsp;+48 220 200 303
+            </p>
+            <p id="email" >
+                <span class="glyphicon glyphicon-envelope">
+                    <a href="mailto:podzespolowo@gmail.com">podzespolowo@gmail.com</a><br>
+
+                </span>
+
+            </p>
+
+        </address>
+        <section class="space">
+            <center> <img id="spaceimg2" src="{% static 'space.png' %}" ></center>
+        </section>
+        <section id="mainlog">
+                <center><div id="insert">
+                    <form action>
+                        <center><input type="text" placeholder="Podaj login" name="logmain"></center><br>
+                        <center><input type="password" placeholder="Podaj hasło" name="passmain"></center><br>
+                        <center><button type="submit">Zaloguj się<i class="Zaloguj"></i></button></center>
+
+                    </form>
+                </div></center>
+        </section>
+
+
     </div>
 
-
+<center><footer>...</footer></center>
 </body>
 </html>

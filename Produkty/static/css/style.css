@@ -1,7 +1,9 @@
 body{
     font-family: Helvetica;
     background-image: url(https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2020/11/sky.jpg);
-    background-size: cover;
+  	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
 
@@ -12,6 +14,16 @@ body{
     margin: 0 auto ;
     background-color: white;
 }
+
+/*@media screen and (max-width: 22200px)
+    #kontener1{
+        height:auto;
+        width:300px;
+        margin: 0 auto ;
+        background-color: white;
+    }
+*/
+
 header{
     height:auto;
     max-width:1200px;
@@ -22,25 +34,27 @@ header{
 
 }
 
-nav{
-width:1200px;
-margin-left:20px;
-margin-right:20px;
-clear:both;
+nav {
+    display:block;
+    text-align:center;
+    max-width:1100px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color:red;
 }
 
 section{
     clear:both;
     height:auto;
+    min-height:30%;
     max-width:1200px;
     margin: 0 auto;
     background-color:white;
 
 }
 
-h1{
-    text-align:left;
-    color:black;
+h1#media{
+    text-align:center;
 }
 
 h2{
@@ -51,12 +65,16 @@ h2{
 
 img#logo{
    float:left;
-   height:15%;
-   width:auto%;
+   max-height:40%;
+   max-width:40%;
    display:block;
 }
+
+
+
 img#produkt_img{
-    height:25%;
+    max-height:500px;
+    max-width:500px;
 }
 .gora{
     clear:both;
@@ -81,6 +99,7 @@ img#produkt_img{
     float:right;
     background-color:white;
     margin:10px;
+    font-size:100%;
 }
 
 .rejestracja{
@@ -88,28 +107,115 @@ img#produkt_img{
     float: right;
     background-color:white;
     margin:10px;
+    font-size:100%;
+
 }
 
-#menu{
-    margin:10px;
+.menu{
+    display:block;
+    position:center;
+    max-weight:1200px;
     float:left;
-    height:auto;
-    }
+}
 
 
 a.menu{
+    position:center;
     text-align:center;
     height:auto;
     width:auto;
     background-color: gray;
-    display:inline-block;
-    padding: 10px 20px;
+    display:block;
+    padding: 15px 20px;
     color:white;
     text-decoration:none;
     float:left;
     font-weight:bold;
+    font-size:14px;
+}
+/* @media screen and (max-width: 12210px){
+    #kontener1{
+    background-color:white;
+    }
+
+    header{
+    height:300px;
+    background-color:white;
+    border-bottom:1px solid white;
+    float:left;
+   }
+
+
+    a.menu{
+    clear:both;
+    text-align:center;
+    background-color: red;
+    margin:10px;
+    display:block;
+    padding: 10px 15px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
 
 }
+   img#logo{
+   max-height:100%;
+   max-width:100%;
+   display:block;
+}
+    .logowanie{
+    color:black;
+    text-decoration:none;
+    float:right;
+    background-color:red;
+    padding:30px 50px;
+    margin:2px;
+    font-size:100%;
+}
+
+    .rejestracja{
+    color:black;
+    text-decoration:none;
+    float: right;
+    background-color:red;
+    padding:30px 50px;
+    margin:2px;
+    font-size:100%;
+}
+
+    .icon{
+    clear:both;
+    padding:1%
+}
+
+    .find {
+    width:100%;
+    clear:both;
+    float:right;
+    display:block;
+    padding:1%
+}
+    section{
+    float:right;
+    height:auto;
+    min-height:30%;
+    max-width:500px;
+    margin: 0 auto;
+    background-color:red;
+
+}
+    nav{
+    max-width:500px;
+    float:left;
+}
+    img#produkt_img{
+    max-height:300px;
+    max-width:300px;
+}
+}
+*/
+
 a.list{
     height:auto;
     width:100%;
@@ -126,13 +232,8 @@ a.list{
 
 a.menu:hover, a.list:hover{
 
-    font-size:15px;
     background-color: crimson;
 }
-a.menu.active{
-    background-color: crimson;
-    font-size: 15px;
-    font-weight: bold;}
 
 #wyswietl{
     text-align:center;
@@ -147,6 +248,15 @@ a.menu.active{
     height:auto;
     margin-left:10%;
     margin-right:10%;
+}
+.linia_glowna{
+float:left;
+    width:50%;
+    height:auto;
+    color:white;
+    background-color:gray;
+    border-bottom:1px solid gray;
+    padding:0,5%;
 }
 
 .linia1{
@@ -169,5 +279,71 @@ a.menu.active{
 
 .specgraf{
     padding:30px;
-    border-bottom:1px solid gray;
+}
+
+a.glyphicon glyphicon-envelope{
+    text-decoration:none;
+    }
+
+footer{
+    max-width:1200px;
+    background-color:white;
+    text-align:center;
+    }
+#spaceimg, #spaceimg2{
+    clear:both;
+    position:relative;
+    margin:50px;
+
+}
+
+.space{
+    position:center;
+    height:150px;
+    margin:50px;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+
+
+}
+
+address{
+    margin:10px;
+    position:center;
+    text-align:center;
+}
+
+#insert{
+    text-align:center;
+    display:block;
+    position:relative;
+    background-color:lightgray;
+    width:300px;
+    height:400px;
+}
+
+#opis_1 , #opis_2 , #opis_3{
+    font-family:Arial;
+}
+
+#opis_img1 , #opis_img2 , #opis_img3{
+    border-bottom: 1px solid #e2e2e2;
+    position:relative;
+    height:500px;
+    width:600px;
+    clear:both;
+    border-radius:80% 80% 80%;
+
+}
+
+h4{clear:both;}
+
+#film{
+    clear:both;
+}
+
+#largeMapLink , #dirMapLink{
+text-decoration:none;
+color:black;
+border-bottom:1px solid #e2e2e2;
 }
