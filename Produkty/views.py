@@ -7,7 +7,7 @@ from .models import Produkty, Kategoria, Zdj, Wartosc
 
 def index(request):
     wszystkie = Produkty.objects.all()
-    jeden = Produkty.objects.get(pk=2)
+    # jeden = Produkty.objects.get(pk=2)
     kategorie = Kategoria.objects.all()
     dane = {'kategorie': kategorie}
     return render(request, 'szablon.html', dane)

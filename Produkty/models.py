@@ -7,6 +7,12 @@ class Zdj(models.Model):
 
     przedmiot = models.TextField(blank=True)
     zdjecie = models.TextField(blank=True)
+    zdj_opis_1 = models.TextField(blank=True)
+    zdj_opis_2 = models.TextField(blank=True)
+    zdj_opis_3 = models.TextField(blank=True)
+    film = models.TextField(blank=True)
+
+
 
     class Meta:
         verbose_name = "Zdjęcie"
@@ -42,6 +48,8 @@ class Kategoria(models.Model):
 
 
 class Wartosc(models.Model):
+    def __str__(self):
+        return self.nazwa
     # nazwa = models.ForeignKey(Kategoria, null=True, blank=True, on_delete=models.CASCADE)
     nazwa = models.CharField(max_length=40)
     wartosc_parametrow1 = models.TextField(blank=True)
@@ -49,8 +57,8 @@ class Wartosc(models.Model):
     wartosc_parametrow3 = models.TextField(blank=True)
     wartosc_parametrow4 = models.TextField(blank=True)
 
-    def __str__(self):
-        return self.nazwa
+    # def __str__(self):
+    #     return self.nazwa
 
     class Meta:
         verbose_name = "Wartość parametru"

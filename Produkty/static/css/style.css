@@ -53,9 +53,8 @@ section{
 
 }
 
-h1{
-    text-align:left;
-    color:black;
+h1#media{
+    text-align:center;
 }
 
 h2{
@@ -250,6 +249,15 @@ a.menu:hover, a.list:hover{
     margin-left:10%;
     margin-right:10%;
 }
+.linia_glowna{
+float:left;
+    width:50%;
+    height:auto;
+    color:white;
+    background-color:gray;
+    border-bottom:1px solid gray;
+    padding:0,5%;
+}
 
 .linia1{
     float:left;
@@ -282,16 +290,21 @@ footer{
     background-color:white;
     text-align:center;
     }
-#spaceimg, spaceimg2{
+#spaceimg, #spaceimg2{
     clear:both;
     position:relative;
     margin:50px;
+
 }
 
-#space{
+.space{
     position:center;
     height:150px;
     margin:50px;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+
+
 }
 
 address{
@@ -309,7 +322,28 @@ address{
     height:400px;
 }
 
-.opis{
-    text-align:justify;
+#opis_1 , #opis_2 , #opis_3{
+    font-family:Arial;
+}
 
+#opis_img1 , #opis_img2 , #opis_img3{
+    border-bottom: 1px solid #e2e2e2;
+    position:relative;
+    height:500px;
+    width:600px;
+    clear:both;
+    border-radius:80% 80% 80%;
+
+}
+
+h4{clear:both;}
+
+#film{
+    clear:both;
+}
+
+#largeMapLink , #dirMapLink{
+text-decoration:none;
+color:black;
+border-bottom:1px solid #e2e2e2;
 }

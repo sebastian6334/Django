@@ -6,7 +6,6 @@
       <div class="gora">
             <h3> {{ produkt_user.kategoria }} {{ produkt_user.nazwa }}</h3>
             <p><b>Producent: </b>{{ produkt_user.producent }}</p><br><br>
-            <p class="opis">{{ produkt_user.opis }}</p>
       </div>
 
 
@@ -22,34 +21,67 @@
       <div id="dol">
 
             <div class="linia"><h4 class="specgraf">Specyfikacja</h4>
+
+
+                  <div class="linia_glowna">
+                        <div class="linia3">Nazwa Parametrów</div></div>
+                  <div class="linia_glowna">
+                        <div class="linia3">Wartość Parametrów</div></div>
+
+
                   <div class="linia1">
                         <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow1 }}</div></div>
                   <div class="linia2">
-                        <div class="linia3">{{ produkt_user.wartosc_parametrow1 }}</div></div>
-
+                        <div class="linia3">{{ produkt_user.wartosc.wartosc_parametrow1 }}</div></div>
 
 
                   <div class="linia1">
                         <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow2 }}</div></div>
                   <div class="linia2">
-                        <div class="linia3">{{ produkt_user.nazwa }}</div></div>
+                        <div class="linia3">{{ produkt_user.wartosc.wartosc_parametrow2 }}</div></div>
 
 
                   <div class="linia1">
                         <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow3 }}</div></div>
                   <div class="linia2">
-                        <div class="linia3">{{ produkt_user.nazwa }}</div></div>
+                        <div class="linia3">{{ produkt_user.wartosc.wartosc_parametrow3  }}</div></div>
 
                   <div class="linia1">
                         <div class="linia3">{{ produkt_user.kategoria.rodzaj_parametrow4 }}</div></div>
                   <div class="linia2">
-                        <div class="linia3">{{ produkt_user.nazwa }}</div></div>
+                        <div class="linia3">{{ produkt_user.wartosc.wartosc_parametrow4 }}</div></div>
             </div>
 
 
-
       </div>
+      <section class="space"></section>
+      <section id="media">
 
+            <h1>Opis Produktu</h1>
+
+            <div id="opisy">
+                  <ul> <li>
+                        <div class="opis_1"><span>{{ produkt_user.opis_1 }}</span>
+                        <div class="opis_img"><img id="opis_img1" src="{{ produkt_user.zdjecie.zdj_opis_1 }}"></div></div>
+
+                  </li><li>
+
+                        <div class="opis_2"><span>{{ produkt_user.opis_2 }}</span>
+                        <div class="opis_img>"><img id="opis_img2" src="{{ produkt_user.zdjecie.zdj_opis_2 }}"></div></div>
+
+                  </li><li>
+
+                  <div class="opis_3"><span>{{ produkt_user.opis_3 }}</span>
+                        <div class="opis_img"><img id="opis_img3" src="{{ produkt_user.zdjecie.zdj_opis_3 }}"></div></div>
+                  </li></ul>
+            </div>
+            <div id="film">
+                  <center><h3>Film poglądowy</h3></center>
+                  <span class="film"><iframe width="100%" height="60%" src="{{ produkt_user.zdjecie.film }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+
+
+            </div>
+      </section>
       {% else %}
           <p>Nie ma produktu o takim id</p>
       {% endif %}

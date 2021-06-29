@@ -1,0 +1,18 @@
+{% extends 'szablon.html' %}
+
+      {% block formularz %}
+      {% if formularz_user %}
+                  <section id="formularz">
+                      <form action>
+                        <input type="text" placeholder="Podaj login" name="logmain">
+                        <input type="password" placeholder="Podaj hasło" name="passmain">
+                        <button type="submit">Zaloguj się<i class="Zaloguj"></i></button>
+                      </form>
+                        {% if  %}
+
+                  </section>
+
+      {% else %}
+          <p>Zalogowano</p>
+      {% endif %}
+      {% endblock formularz %}
